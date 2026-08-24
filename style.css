@@ -174,14 +174,21 @@ body {
   background-color: #ffffff;
 }
 /* Delete Button (X mark) */
-.taskList li span.delete-btn {
+.taskList li .delete-btn {
   padding: 4px 8px;
   border-radius: 8px;
   font-size: 20px;
   transition: all 0.2s;
   flex-shrink: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.taskList li span.delete-btn:hover {
+.taskList li .delete-btn:hover {
   background-color: rgba(188, 8, 8, 0.1);
     color: #ef4444;
     cursor: pointer;
