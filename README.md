@@ -1,8 +1,8 @@
 # 📝 Advanced Todo List
 
-A modern and interactive **Todo List application** built with **HTML, CSS, and Vanilla JavaScript**.
+A modern, interactive, and responsive **Todo List application** built with **HTML5, CSS3, and Vanilla JavaScript**.
 
-This project focuses on practicing DOM manipulation, event handling, Local Storage, filtering, animations, and inline task editing without using any JavaScript framework.
+This project was created to practice real-world frontend development concepts such as DOM manipulation, event handling, Local Storage, filtering, animations, inline editing, and responsive design.
 
 ## ✨ Features
 
@@ -16,19 +16,22 @@ This project focuses on practicing DOM manipulation, event handling, Local Stora
   * All
   * Active
   * Completed
-* 💾 Save tasks in **Local Storage**
-* 🔄 Automatically restore tasks after refreshing the page
+* 💾 Save tasks using **Local Storage**
+* 🔄 Restore tasks automatically after refreshing the page
 * 📊 Display the number of active tasks
-* 🎨 Responsive and modern UI
+* 📱 Fully responsive design
+* 📲 Mobile-friendly interface
+* 💻 Optimized for desktop, tablet, and mobile screens
+* 🎨 Modern and clean user interface
 * ⚡ Built with pure JavaScript — no framework required
 
 ## 🛠️ Technologies
 
-* **HTML5**
-* **CSS3**
-* **JavaScript (ES6+)**
-* **Local Storage API**
-* **Font Awesome**
+* **HTML5** — Application structure
+* **CSS3** — Styling, animations, and responsive design
+* **JavaScript (ES6+)** — Application logic and DOM manipulation
+* **Local Storage API** — Persistent task storage
+* **Font Awesome** — Icons
 
 ## 📂 Project Structure
 
@@ -51,29 +54,48 @@ git clone https://github.com/your-username/your-repository-name.git
 
 ### 2. Open the project
 
-Navigate to the project directory:
-
 ```bash
 cd your-repository-name
 ```
 
 ### 3. Run the project
 
-Simply open:
+Open the following file in your browser:
 
 ```text
 index.html
 ```
 
-in your browser.
+No backend, database, or additional installation is required.
 
-No backend or additional installation is required.
+## 📱 Responsive Design
 
-## 💡 How It Works
+The application is designed to work across different screen sizes.
 
-Tasks are stored in the browser's **Local Storage**, allowing them to remain available even after refreshing or reopening the page.
+### Supported Devices
 
-Each task contains:
+* 🖥️ Desktop
+* 💻 Laptop
+* 📱 Mobile phones
+* 📲 Tablets
+
+CSS media queries are used to adapt the layout for smaller screens.
+
+The interface automatically adjusts:
+
+* Input and Add button
+* Task filters
+* Task list
+* Task text
+* Delete button
+* Edit input
+* Spacing and typography
+
+## 💾 Data Storage
+
+Tasks are stored in the browser using the **Local Storage API**.
+
+Each task is represented as an object:
 
 ```javascript
 {
@@ -82,18 +104,18 @@ Each task contains:
 }
 ```
 
-When a task is completed, its `checked` value changes to `true`.
+When a task is completed, the `checked` value becomes `true`.
 
-The application then uses this information to:
+This data is then used to:
 
-* Update the task counter
-* Apply the completed style
-* Filter tasks
-* Save the new state to Local Storage
+* Restore tasks after page refresh
+* Count active tasks
+* Filter completed and active tasks
+* Save task changes
 
-## 🎯 Main JavaScript Concepts Practiced
+## 💡 JavaScript Concepts Practiced
 
-This project was created to practice important JavaScript concepts such as:
+This project demonstrates several important JavaScript concepts:
 
 * DOM Selection
 * DOM Manipulation
@@ -105,15 +127,36 @@ This project was created to practice important JavaScript concepts such as:
 * Conditional Statements
 * `classList`
 * `localStorage`
-* JSON
+* `JSON.stringify()`
+* `JSON.parse()`
 * Dynamic Element Creation
 * Keyboard Events
+* Click Events
 * Double-Click Events
+* Blur Events
 * Animation Events
+
+## 🎯 Project Goals
+
+The main goal of this project was to practice building a complete frontend application using Vanilla JavaScript.
+
+The project focuses on understanding how different parts of a frontend application work together:
+
+```text
+User Input
+    ↓
+JavaScript Logic
+    ↓
+DOM Manipulation
+    ↓
+Local Storage
+    ↓
+UI Update
+```
 
 ## 📸 Screenshots
 
-Add screenshots of your project here:
+You can add screenshots of the application here:
 
 ```markdown
 ![Todo List Screenshot](screenshots/todo-list.png)
@@ -123,15 +166,17 @@ Add screenshots of your project here:
 
 Possible features for future versions:
 
+* [ ] Dark mode
 * [ ] Task priorities
 * [ ] Due dates
 * [ ] Search tasks
-* [ ] Dark mode
-* [ ] Drag and drop tasks
 * [ ] Clear completed tasks
-* [ ] Edit task button
+* [ ] Drag and drop tasks
 * [ ] Task categories
-* [ ] Better mobile optimization
+* [ ] Better animations
+* [ ] Improved accessibility
+* [ ] Backend integration
+* [ ] User authentication
 
 ## 👨‍💻 Author
 
