@@ -210,4 +210,220 @@ body {
 }
 .task-fade-out {
   animation: fadeOut 0.3s ease forwards;
+
+
+     /* RESPONSIVE DESIGN */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    .header {
+        padding: 25px 20px;
+    }
+
+    .header h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .input-group input {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+    }
+
+    .addBtn {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .todo-footer {
+        padding: 15px 18px;
+        gap: 15px;
+    }
+
+    .task-count {
+        font-size: 14px;
+    }
+
+    .filters {
+        gap: 6px;
+    }
+
+    .filter-btn {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .taskList li {
+        padding: 14px 16px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px 0;
+    }
+
+    .container {
+        width: calc(100% - 24px);
+        margin: 15px auto;
+    }
+
+    /* Header */
+
+    .header {
+        padding: 22px 15px;
+        border-radius: 12px;
+    }
+
+    .header h2 {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    /* Input */
+
+    .input-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .input-group input {
+        width: 100%;
+        min-width: 0;
+        height: 45px;
+        padding: 0 12px;
+        font-size: 15px;
+    }
+
+    .addBtn {
+        height: 45px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+
+    .todo-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    /* Task Counter */
+    .task-count {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Filters */
+    .filters {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .filter-btn {
+        flex: 1;
+        padding: 9px 5px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* Task List */
+    .taskList {
+        margin-top: 12px;
+        padding: 0;
+    }
+
+    .taskList li {
+        min-height: 48px;
+        padding: 12px;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    /* Task Text */
+    .task-text {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    /* Delete Button */
+    .delete-btn {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+
+    /* Edit Input */
+
+    .edit-input {
+        width: 100%;
+        min-width: 0;
+        font-size: 15px;
+    }
+
+}
+
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width: 360px) {
+
+    .container {
+        width: calc(100% - 16px);
+    }
+
+    .header {
+        padding: 18px 10px;
+    }
+
+    .header h2 {
+        font-size: 21px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .addBtn {
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .filter-btn {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+
+    .taskList li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
 }
