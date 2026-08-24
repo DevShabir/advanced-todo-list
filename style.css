@@ -175,15 +175,9 @@ body {
 }
 /* Delete Button (X mark) */
 .taskList li .delete-btn {
-  padding: 4px 8px;
-  border-radius: 8px;
-  font-size: 20px;
-  transition: all 0.2s;
-  flex-shrink: 0;
   border: none;
-  background: transparent;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 17.5px;
   display: flex;
   align-items: center;
   justify-content: center;
